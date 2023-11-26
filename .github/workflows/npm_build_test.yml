@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: latest
       - run: npm install
+      - run: npm install @rollup/rollup-linux-x64-gnu
       - run: npm run build
       - name: setup opengemini
         uses: shoothzj/setup-opengemini-action@main

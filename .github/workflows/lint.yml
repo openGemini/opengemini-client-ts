@@ -1,4 +1,4 @@
-name: prettier
+name: lint
 on:
   push:
     branches:
@@ -15,6 +15,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: latest
-      - run: npm install --save-dev prettier
-      - run: npm install --global prettier
-      - run: prettier --check '**/*.ts'
+      - run: npm install
+      - run: npm run lint

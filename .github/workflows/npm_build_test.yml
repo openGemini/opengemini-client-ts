@@ -17,6 +17,6 @@ jobs:
           node-version: latest
       - run: npm install
       - run: npm run build
-      - name: setup pulsar
-        uses: shoothzj/setup-pulsar-action@main
+      - name: setup opengemini
+        uses: shoothzj/setup-opengemini-action@main
       - run: npm run test

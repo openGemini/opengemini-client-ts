@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A TypeScript-based OpenGemini client library for Node.js and the browser.",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "node prepare.mjs",
     "test": "jest --coverage",
     "lint": "eslint . --ext js,.ts && prettier . --check",
     "fix": "eslint . --ext js,.ts --fix && prettier . --write",
@@ -46,7 +46,7 @@
   "homepage": "https://github.com/openGemini/opengemini-client-ts#readme",
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
-    "*.{js,ts}": "eslint --fix"
+    "*.{js,mjs,ts}": "eslint --fix"
   },
   "jest": {
     "setupFilesAfterEnv": [

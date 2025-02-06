@@ -38,7 +38,7 @@
     "typescript",
     "axios"
   ],
-  "author": "shoothzj",
+  "author": "hezhangjian",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/openGemini/opengemini-client-ts/issues"

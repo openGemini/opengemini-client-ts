@@ -18,5 +18,5 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: setup opengemini
-        uses: shoothzj/setup-opengemini-action@main
+        uses: hezhangjian/setup-opengemini-action@main
       - run: npm run test
